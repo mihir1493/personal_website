@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">My Personal Website</div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#upcoming">Upcoming</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="mailto:mshinde1410@gmail.com?subject=Resume%20Request" class="resume-btn">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Mihir Shinde</h1>
+                <p class="hero-subtitle">Senior Data Scientist - JM Smucker</p>
+                <a href="#contact" class="cta-button">Get in touch</a>
+            </div>
+            <div class="hero-image">
+                <img src="profile_pic.jpeg" alt="Mihir Shinde" class="hero-profile-pic">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    I focus on applied data science in retail, working across forecasting, pricing optimization, revenue growth management (RGM/ NRO) initiatives, and customer and category analytics. My work centers on turning complex data into clear, actionable insights that directly inform business decisions. I’m particularly interested in building practical, scalable solutions using machine learning and AI—where they add real value and drive measurable impact
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">What I Do</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="price.png" alt="Pricing & Promotion" class="skill-icon-img">
+                    </div>
+                    <h3 class="skill-title">Pricing & Promotion</h3>
+                    <p class="skill-description">Turning price into a strategic growth engine through elasticity modeling, causal inference, and uplift analytics</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="forecasting.png" alt="Demand Forecasting" class="skill-icon-img">
+                    </div>
+                    <h3 class="skill-title">Demand Forecasting</h3>
+                    <p class="skill-description">Engineering intelligent, multi-level forecasting systems that power inventory & trade planning and operational efficiency</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="assortment.png" alt="Category Analysis" class="skill-icon-img">
+                    </div>
+                    <h3 class="skill-title">Category Analysis</h3>
+                    <p class="skill-description">Designing data-driven assortment strategies using substitution modeling and performance decomposition</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Projects Section -->
+    <section class="upcoming" id="upcoming">
+        <div class="container">
+            <h2 class="section-title">Upcoming Projects</h2>
+            <div class="upcoming-grid">
+                <div class="upcoming-card">
+                    <div class="upcoming-image">
+                        <div class="image-placeholder">Project Preview</div>
+                    </div>
+                    <div class="upcoming-content">
+                        <h3 class="upcoming-title">Project LUNA</h3>
+                        <p class="upcoming-description">Synthetic Respondents Toolkit</p>
+                        <div class="upcoming-status">
+                            <a href="https://github.com/mihir1493/luna" class="status-badge" target="_blank" rel="noopener noreferrer">Ongoing - Click →</a>
+                            <span class="deadline">06/2026</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="upcoming-card">
+                    <div class="upcoming-image">
+                        <div class="image-placeholder">Project Preview</div>
+                    </div>
+                    <div class="upcoming-content">
+                        <h3 class="upcoming-title">LLMAbility</h3>
+                        <p class="upcoming-description">IOS App to improve communication</p>
+                        <div class="upcoming-status">
+                            <span class="status-badge">Coming Soon</span>
+                            <span class="deadline">[05/2026]</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="upcoming-card">
+                    <div class="upcoming-image">
+                        <div class="image-placeholder">Project Preview</div>
+                    </div>
+                    <div class="upcoming-content">
+                        <h3 class="upcoming-title">Ikonify</h3>
+                        <p class="upcoming-description">Quickly create different icon with same theme</p>
+                        <div class="upcoming-status">
+                            <span class="status-badge">Coming Soon</span>
+                            <span class="deadline">[05/2026]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Work Section -->
+    <section class="work" id="work">
+        <div class="container">
+            <h2 class="section-title">Latest Work</h2>
+            <div class="work-grid">
+                <div class="work-card" data-project="1">
+                    <div class="work-image">
+                        <div class="image-placeholder">Project 1</div>
+                        <div class="work-overlay">
+                            <span class="overlay-text">View Details</span>
+                        </div>
+                    </div>
+                    <h3 class="work-title">EMAP Violation Tool</h3>
+                    <p class="work-category">Retail 3P Reporting</p>
+                </div>
+                <div class="work-card" data-project="2">
+                    <div class="work-image">
+                        <div class="image-placeholder">Project 2</div>
+                        <div class="work-overlay">
+                            <span class="overlay-text">View Details</span>
+                        </div>
+                    </div>
+                    <h3 class="work-title">Drought Prediction</h3>
+                    <p class="work-category">Forecasting Pipeline</p>
+                </div>
+                <div class="work-card" data-project="3">
+                    <div class="work-image">
+                        <div class="image-placeholder">Project 3</div>
+                        <div class="work-overlay">
+                            <span class="overlay-text">View Details</span>
+                        </div>
+                    </div>
+                    <h3 class="work-title">TubeNest</h3>
+                    <p class="work-category">AI Chrome Plugin</p>
+                </div>
+                <div class="work-card" data-project="4">
+                    <div class="work-image">
+                        <div class="image-placeholder">Project 4</div>
+                        <div class="work-overlay">
+                            <span class="overlay-text">View Details</span>
+                        </div>
+                    </div>
+                    <h3 class="work-title">AB Testing</h3>
+                    <p class="work-category">Retail Experimentation</p>
+                </div>
+                <div class="work-card" data-project="5">
+                    <div class="work-image">
+                        <div class="image-placeholder">Project 5</div>
+                        <div class="work-overlay">
+                            <span class="overlay-text">View Details</span>
+                        </div>
+                    </div>
+                    <h3 class="work-title">Pricing optimization</h3>
+                    <p class="work-category">Retail Pricing</p>
+                </div>
+                <div class="work-card" data-project="6">
+                    <div class="work-image">
+                        <div class="image-placeholder">Project 6</div>
+                        <div class="work-overlay">
+                            <span class="overlay-text">View Details</span>
+                        </div>
+                    </div>
+                    <h3 class="work-title">Deep Learning</h3>
+                    <p class="work-category">Advance AI/ML Implementation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mihir-shinde/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://medium.com/@mshinde1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Medium">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Mihir Shinde Dev. All rights reserved. </p>
+                <p>Credits: https://www.figma.com/@anima </p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <div class="image-placeholder" id="modalImage">Project Image</div>
+                </div>
+                <div class="modal-details">
+                    <h2 class="modal-title" id="modalTitle">[Project Title]</h2>
+                    <p class="modal-category" id="modalCategory">[Category]</p>
+                    <p class="modal-description" id="modalDescription">
+                        [Add detailed description of the project here. Explain the goals, challenges, solutions, and outcomes.]
+                    </p>
+                    <div class="modal-tags" id="modalTags">
+                        <span class="tag">[Tech 1]</span>
+                        <span class="tag">[Tech 2]</span>
+                        <span class="tag">[Tech 3]</span>
+                    </div>
+                    <a href="#" class="modal-link" id="modalLink" target="_blank" rel="noopener noreferrer">
+                        View Live Project →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
