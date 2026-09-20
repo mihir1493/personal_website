@@ -140,6 +140,14 @@ const projectData = {
         tags: ['RNN', 'CNN'],
         link: 'https://github.com/mihir1493/Deep-Learning',
         image: 'assets/deep-learning.svg'
+    },
+    7: {
+        title: 'Notebook Context',
+        category: 'VS Code Extension',
+        description: 'A VS Code extension that captures the reasoning behind Jupyter notebook code — experiments, decisions, assumptions, and data context — right next to the cell. Context cells stay as plain markdown so notebooks remain readable in JupyterLab and GitHub, while the extension tracks drift between documented assumptions and the code, and lets you export the context log for teammates or AI agents.',
+        tags: ['VS Code API', 'Jupyter', 'TypeScript'],
+        link: 'https://marketplace.visualstudio.com/items?itemName=donty14.notebook-context',
+        image: 'assets/notebook-context.svg'
     }
 };
 

@@ -1,0 +1,44 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f2e1f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1b4e35;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22d3a5;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow7">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgGrad7)"/>
+
+  <!-- Decorative elements -->
+  <polygon points="640,90 670,150 610,150" fill="none" stroke="#4ade80" stroke-width="2" opacity="0.2"/>
+  <rect x="90" y="410" width="110" height="110" fill="none" stroke="#4ade80" stroke-width="2" opacity="0.15" transform="rotate(20 145 465)"/>
+
+  <!-- Notebook cell -->
+  <g filter="url(#glow7)">
+    <rect x="230" y="180" width="340" height="90" rx="12" fill="none" stroke="url(#accentGrad7)" stroke-width="6"/>
+    <line x1="260" y1="210" x2="420" y2="210" stroke="url(#accentGrad7)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="260" y1="235" x2="470" y2="235" stroke="url(#accentGrad7)" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- Context annotation callout -->
+  <g filter="url(#glow7)">
+    <path d="M250 300 h300 a16 16 0 0 1 16 16 v70 a16 16 0 0 1 -16 16 h-210 l-40 34 v-34 h-50 a16 16 0 0 1 -16 -16 v-70 a16 16 0 0 1 16 -16 z"
+          fill="none" stroke="#4ade80" stroke-width="6"/>
+    <line x1="280" y1="335" x2="500" y2="335" stroke="#4ade80" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+    <line x1="280" y1="360" x2="440" y2="360" stroke="#4ade80" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+  </g>
+
+  <!-- Text -->
+  <text x="400" y="495" font-size="42" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial">NOTEBOOK CONTEXT</text>
+  <text x="400" y="535" font-size="22" fill="#4ade80" text-anchor="middle" font-family="Arial">VS Code Extension</text>
+</svg>
