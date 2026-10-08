@@ -40,22 +40,23 @@
         }
 
         .article-card {
-            background: var(--color-primary);
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
             border-radius: 12px;
             overflow: hidden;
             transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.08);
             display: flex;
             flex-direction: column;
             cursor: pointer;
             text-decoration: none;
             color: inherit;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
 
         .article-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+            border-color: rgba(0, 0, 0, 0.12);
         }
 
         .article-image {
@@ -140,7 +141,7 @@
         .article-title {
             font-size: 1.3rem;
             font-weight: 600;
-            color: var(--color-text);
+            color: #1a1a1a;
             margin-bottom: 12px;
             line-height: 1.4;
             flex-grow: 1;
@@ -148,7 +149,7 @@
 
         .article-description {
             font-size: 0.95rem;
-            color: var(--color-text-secondary);
+            color: #555;
             margin-bottom: 15px;
             line-height: 1.5;
             display: -webkit-box;
@@ -160,56 +161,17 @@
         .read-more {
             display: inline-flex;
             align-items: center;
-            color: #00f2fe;
+            color: #0066cc;
             font-weight: 500;
             text-decoration: none;
             transition: all 0.3s ease;
         }
 
         .read-more:hover {
-            color: #4facfe;
+            color: #0052a3;
             transform: translateX(5px);
         }
 
-        .article-card:nth-child(2) .read-more {
-            color: #43e97b;
-        }
-
-        .article-card:nth-child(2) .read-more:hover {
-            color: #38f9d7;
-        }
-
-        .article-card:nth-child(3) .read-more {
-            color: #fa709a;
-        }
-
-        .article-card:nth-child(3) .read-more:hover {
-            color: #fee140;
-        }
-
-        .article-card:nth-child(4) .read-more {
-            color: #30cfd0;
-        }
-
-        .article-card:nth-child(4) .read-more:hover {
-            color: #330867;
-        }
-
-        .article-card:nth-child(5) .read-more {
-            color: #a8edea;
-        }
-
-        .article-card:nth-child(5) .read-more:hover {
-            color: #fed6e3;
-        }
-
-        .article-card:nth-child(6) .read-more {
-            color: #ff9a56;
-        }
-
-        .article-card:nth-child(6) .read-more:hover {
-            color: #ff6a88;
-        }
 
         .read-more::after {
             content: '→';
