@@ -61,19 +61,67 @@
         .article-image {
             width: 100%;
             height: 200px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 2rem;
             color: white;
             overflow: hidden;
+            position: relative;
+        }
+
+        .article-image::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+            opacity: 0.9;
+            z-index: 1;
         }
 
         .article-image img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Liquid color variations for each article */
+        .article-card:nth-child(1) .article-image,
+        .article-card:nth-child(1) .article-image::before {
+            background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+        }
+
+        .article-card:nth-child(2) .article-image,
+        .article-card:nth-child(2) .article-image::before {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+
+        .article-card:nth-child(3) .article-image,
+        .article-card:nth-child(3) .article-image::before {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+
+        .article-card:nth-child(4) .article-image,
+        .article-card:nth-child(4) .article-image::before {
+            background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+        }
+
+        .article-card:nth-child(5) .article-image,
+        .article-card:nth-child(5) .article-image::before {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
+
+        .article-card:nth-child(6) .article-image,
+        .article-card:nth-child(6) .article-image::before {
+            background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);
+        }
+
+        .article-card:nth-child(n+7) .article-image,
+        .article-card:nth-child(n+7) .article-image::before {
+            background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
         }
 
         .article-content {
@@ -112,15 +160,55 @@
         .read-more {
             display: inline-flex;
             align-items: center;
-            color: #667eea;
+            color: #00f2fe;
             font-weight: 500;
             text-decoration: none;
             transition: all 0.3s ease;
         }
 
         .read-more:hover {
-            color: #764ba2;
+            color: #4facfe;
             transform: translateX(5px);
+        }
+
+        .article-card:nth-child(2) .read-more {
+            color: #43e97b;
+        }
+
+        .article-card:nth-child(2) .read-more:hover {
+            color: #38f9d7;
+        }
+
+        .article-card:nth-child(3) .read-more {
+            color: #fa709a;
+        }
+
+        .article-card:nth-child(3) .read-more:hover {
+            color: #fee140;
+        }
+
+        .article-card:nth-child(4) .read-more {
+            color: #30cfd0;
+        }
+
+        .article-card:nth-child(4) .read-more:hover {
+            color: #330867;
+        }
+
+        .article-card:nth-child(5) .read-more {
+            color: #a8edea;
+        }
+
+        .article-card:nth-child(5) .read-more:hover {
+            color: #fed6e3;
+        }
+
+        .article-card:nth-child(6) .read-more {
+            color: #ff9a56;
+        }
+
+        .article-card:nth-child(6) .read-more:hover {
+            color: #ff6a88;
         }
 
         .read-more::after {
