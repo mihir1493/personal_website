@@ -1,0 +1,57 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e0f1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4e1b2d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff1744;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff5252;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow8">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgGrad8)"/>
+
+  <!-- Decorative elements -->
+  <polygon points="150,100 180,160 120,160" fill="none" stroke="#ff1744" stroke-width="2" opacity="0.2"/>
+  <rect x="600" y="380" width="140" height="140" fill="none" stroke="#ff1744" stroke-width="2" opacity="0.15" transform="rotate(30 670 450)"/>
+
+  <!-- YouTube play button frame -->
+  <g filter="url(#glow8)">
+    <rect x="220" y="160" width="360" height="240" rx="24" fill="none" stroke="url(#accentGrad8)" stroke-width="8"/>
+  </g>
+
+  <!-- YouTube play icon -->
+  <g filter="url(#glow8)">
+    <circle cx="400" cy="280" r="60" fill="url(#accentGrad8)"/>
+    <polygon points="370,260 370,300 430,280" fill="#ffffff"/>
+  </g>
+
+  <!-- Subscriber indicators (multiple) -->
+  <g filter="url(#glow8)" opacity="0.9">
+    <circle cx="320" cy="420" r="18" fill="none" stroke="#ff1744" stroke-width="3"/>
+    <text x="320" y="428" font-size="20" font-weight="bold" fill="#ff1744" text-anchor="middle">+</text>
+  </g>
+
+  <g filter="url(#glow8)" opacity="0.85">
+    <circle cx="400" cy="430" r="18" fill="none" stroke="#ff1744" stroke-width="3"/>
+    <text x="400" y="438" font-size="20" font-weight="bold" fill="#ff1744" text-anchor="middle">+</text>
+  </g>
+
+  <g filter="url(#glow8)" opacity="0.8">
+    <circle cx="480" cy="420" r="18" fill="none" stroke="#ff1744" stroke-width="3"/>
+    <text x="480" y="428" font-size="20" font-weight="bold" fill="#ff1744" text-anchor="middle">+</text>
+  </g>
+
+  <!-- Text -->
+  <text x="400" y="505" font-size="42" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial">YOUTUBE BULK</text>
+  <text x="400" y="545" font-size="42" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial">SUBSCRIBER</text>
+  <text x="400" y="580" font-size="20" fill="#ff1744" text-anchor="middle" font-family="Arial">Chrome Extension</text>
+</svg>

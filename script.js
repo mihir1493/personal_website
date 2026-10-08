@@ -148,6 +148,14 @@ const projectData = {
         tags: ['VS Code API', 'Jupyter', 'TypeScript'],
         link: 'https://marketplace.visualstudio.com/items?itemName=donty14.notebook-context',
         image: 'assets/notebook-context.svg'
+    },
+    8: {
+        title: 'YouTube Bulk Subscriber',
+        category: 'Chrome Extension',
+        description: 'A powerful Chrome extension that automates bulk channel subscriptions on YouTube. Streamline your YouTube workflow by subscribing to multiple channels efficiently with this intuitive extension designed for content creators and managers.',
+        tags: ['Chrome API', 'YouTube API', 'JavaScript'],
+        link: 'https://chromewebstore.google.com/detail/youtube-bulk-subscriber/apjejcejjhdkplknbcbdllenihbbpdfd',
+        image: 'assets/youtube-bulk-subscriber.svg'
     }
 };
 
