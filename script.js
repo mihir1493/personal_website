@@ -156,6 +156,14 @@ const projectData = {
         tags: ['Chrome API', 'YouTube API', 'JavaScript'],
         link: 'https://chromewebstore.google.com/detail/youtube-bulk-subscriber/apjejcejjhdkplknbcbdllenihbbpdfd',
         image: 'assets/youtube-bulk-subscriber.svg'
+    },
+    9: {
+        title: 'Attentio',
+        category: 'Chrome Extension',
+        description: 'A focus assistant Chrome extension designed to help you maintain concentration and productivity. Attentio helps manage distractions and keeps you engaged on what matters most with intelligent focus management features.',
+        tags: ['Chrome API', 'Productivity', 'JavaScript'],
+        link: 'https://chromewebstore.google.com/detail/attentio/fcgcldcpaobnfecfbgibnpmmajcjcech',
+        image: 'assets/attentio.svg'
     }
 };
 
