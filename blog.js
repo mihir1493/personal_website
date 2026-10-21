@@ -33,9 +33,16 @@ const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponen
 const articlesContainer = document.getElementById('articles-container');
 
 fetch(apiUrl)
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
     .then(data => {
-        if (data.items && data.items.length > 0) {
+        console.log('Medium API Response:', data);
+
+        if (data.status === 'ok' && data.items && data.items.length > 0) {
             articlesContainer.innerHTML = '';
 
             data.items.forEach(item => {
@@ -56,7 +63,7 @@ fetch(apiUrl)
                 }
 
                 // Clean description
-                let description = item.description || '';
+                let description = item.description || item.content || '';
                 description = description.replace(/<[^>]*>/g, '').substring(0, 150);
 
                 const articleCard = document.createElement('a');
@@ -67,12 +74,12 @@ fetch(apiUrl)
 
                 articleCard.innerHTML = `
                     <div class="article-image">
-                        ${imageUrl ? `<img src="${imageUrl}" alt="${item.title}" />` : '<span>📝</span>'}
+                        ${imageUrl ? `<img src="${imageUrl}" alt="${item.title}" onerror="this.style.display='none'"/>` : ''}<span ${imageUrl ? 'style="display:none"' : ''}>📝</span>
                     </div>
                     <div class="article-content">
                         <div class="article-date">${formattedDate}</div>
                         <h3 class="article-title">${item.title}</h3>
-                        <p class="article-description">${description}</p>
+                        <p class="article-description">${description || 'Read more on Medium...'}</p>
                         <span class="read-more">Read Article</span>
                     </div>
                 `;
@@ -80,10 +87,10 @@ fetch(apiUrl)
                 articlesContainer.appendChild(articleCard);
             });
         } else {
-            articlesContainer.innerHTML = '<div class="error">No articles found. Please check the Medium username.</div>';
+            articlesContainer.innerHTML = '<div class="error">No articles found. Start publishing on Medium to display your articles here!</div>';
         }
     })
     .catch(error => {
         console.error('Error fetching articles:', error);
-        articlesContainer.innerHTML = '<div class="error">Error loading articles. Please try again later.</div>';
+        articlesContainer.innerHTML = '<div class="error">Unable to load articles. The Medium API may be temporarily unavailable. Please check back soon!</div>';
     });
